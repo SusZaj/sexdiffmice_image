@@ -260,7 +260,7 @@ We have already done this step and provide a cleaned up file which is less compu
 
 ```{r clean, eval=FALSE}
 # Load raw data - save cleaned dataset as RDS for reuse
-data_raw <- load_raw(https://zenodo.org/record/3759701/files/dr7.0_all_control_data.csv.gz"))
+data_raw <- load_raw("https://zenodo.org/record/3759701/files/dr7.0_all_control_data.csv.gz")
 dir.create("export", F, F)
 
 data <- data_raw %>% 
