@@ -1,1 +1,1 @@
-install.packages(c('metafor','devtools','kableExtra','robumeta','ggpubr','png','grid','here','knitr','pander','splus2R'))
+install.packages(c('pacman','metafor','devtools','kableExtra','robumeta','ggpubr','png','here','knitr','pander','splus2R'))

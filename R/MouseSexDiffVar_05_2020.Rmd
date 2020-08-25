@@ -109,7 +109,7 @@ load_raw <- function(filename) {
 # Apply some standard cleaning to the data
 clean_raw_data <- function(mydata) {
   
-  group <- read_csv(here("data", "ParameterGrouping.csv"))
+  group <- read_csv(here("Data", "ParameterGrouping.csv"))
   
   tmp <- 
     mydata %>%
@@ -260,7 +260,7 @@ We have already done this step and provide a cleaned up file which is less compu
 
 ```{r clean, eval=FALSE}
 # Load raw data - save cleaned dataset as RDS for reuse
-data_raw <- load_raw(here("data","dr7.0_all_control_data.csv.gz"))
+data_raw <- load_raw(https://zenodo.org/record/3759701/files/dr7.0_all_control_data.csv.gz"))
 dir.create("export", F, F)
 
 data <- data_raw %>% 
@@ -271,9 +271,9 @@ data <- data_raw %>%
 
 For analysis we load the RDS created above and other datasets
 ```{r load}
-data <- readRDS(here("export", "data_clean.rds")) 
+data <- readRDS(here("Data", "data_clean.rds")) 
 
-procedures <- read_csv(here("data", "procedures.csv"))
+procedures <- read_csv(here("Data", "procedures.csv"))
 
 ```
 ## Mean-variance relationships
